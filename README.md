@@ -49,3 +49,6 @@ For tokenization I used BertTokenizer.from_pretrained for 'bert-base-cased'. aft
 <h2> Output of model classifying on raw input text:</h2>
 
 ![image](https://user-images.githubusercontent.com/34622497/154798806-89e3c2e1-cf64-4c5a-a7ca-b11e9042e9ed.png)
+
+
+<h3> Reference taken from : https://youtu.be/8N-nM3QW7O0
