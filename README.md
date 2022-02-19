@@ -1,5 +1,6 @@
 <h1>What is BERT?</h1>
-BERT introduced in [this paper](https://arxiv.org/abs/1810.04805 "Paper") 
+
+BERT introduced in [this paper](https://arxiv.org/abs/1810.04805 ) 
 stands for Bidirectional Encoder Representations from Transformers. If you don't know what most of that means - you've come to the right place! Let's unpack the main ideas:
 
 * <h3>Bidirectional</h3> - to understand the text you're looking you'll have to look back (at the previous words) and forward (at the next words)
@@ -31,3 +32,20 @@ BERT is simply a pre-trained stack of Transformer Encoders. How many Encoders? W
 The BERT paper was released along with the source code and pre-trained models.
 
 The best part is that you can do Transfer Learning (thanks to the ideas from OpenAI Transformer) with BERT for many NLP tasks - Classification, Question Answering, Entity Recognition, etc. You can train with small amounts of data and achieve great performance!
+
+<h2>Gameplan</h2>
+I haved used BERT-BASE-CASED pre-trained model for this project the main reason for going with the base-case model was that words written in uppercase will have more severity
+and will complicate the process of classification. Also after loading the dataset I have cleaned it as it contianed some NAN values and and extra column which was not needed. 
+For tokenization I used BertTokenizer.from_pretrained for 'bert-base-cased'. after doing the necessary data prep and training the model below are few outputs obtained.
+
+<h2> Outputs obtained from the model on few examples from test data : </h2>
+
+ ![image](https://user-images.githubusercontent.com/34622497/154799044-c08a2c68-a525-447d-8c16-f39dd5394c8d.png)
+
+
+ ![image](https://user-images.githubusercontent.com/34622497/154799070-5481e7d1-c65e-4228-a67e-9cb841820bd8.png)
+
+
+<h2> Output of model classifying on raw input text:</h2>
+
+![image](https://user-images.githubusercontent.com/34622497/154798806-89e3c2e1-cf64-4c5a-a7ca-b11e9042e9ed.png)
